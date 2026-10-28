@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ॐ नमः शिवाय | Naam Jap Counter</title>
+
+    <link rel="stylesheet" href="jap.css">
+    <script src="jap.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="om">ॐ</div>
+
+        <h1>नाम जाप साधना</h1>
+
+        <div class="mantra">
+            "ॐ नमः शिवाय"
+        </div>
+
+        <div class="card">
+
+            <div class="counter" id="counter">0</div>
+
+            <div class="target">
+                लक्ष्य: 108 जाप
+            </div>
+
+            <button class="jap-btn" onclick="japKaro()">
+                जाप करें
+            </button>
+
+            <div class="progress-area">
+
+                <div class="progress-info">
+                    <span>प्रगति</span>
+                    <span id="percentage">0%</span>
+                </div>
+
+                <div class="progress-bg">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+
+            </div>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <div class="stat-number" id="todayCount">0</div>
+                    <div class="stat-title">आज का जाप</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-number">108</div>
+                    <div class="stat-title">लक्ष्य</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-number" id="remaining">108</div>
+                    <div class="stat-title">बाकी</div>
+                </div>
+
+            </div>
+
+            <div class="message" id="message">
+                हर जाप के साथ मन को शांत करें 🙏
+            </div>
+
+            <button class="reset-btn" onclick="resetCounter()">
+                Reset Counter
+            </button>
+
+        </div>
+
+        <div class="footer">
+            हर हर महादेव 🔱
+        </div>
+
+    </div>
+
+</body>
+</html>
